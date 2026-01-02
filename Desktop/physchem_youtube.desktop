@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Chromium Kiosk
+Comment=Open website in fullscreen kiosk mode
+Exec=chromium --noerrdialogs --disable-infobars --incognito --start-fullscreen --app=/kome/kvint/kiosk.html
+Icon=chromim
+Terminal=true
+StartupNotify=false
+Categories=Network;WebBrowser;
+X-KeepTerminal=true
