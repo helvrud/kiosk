@@ -2,6 +2,8 @@
 # Tell the script which screen to use
 export DISPLAY=:0
 export XAUTHORITY=/home/kvint/.Xauthority
+export WAYLAND_DISPLAY=wayland-0 
+export XDG_RUNTIME_DIR=/run/user/1000 
 
 # 1. Kill any existing Chromium windows to avoid "double windows"
 pkill -f chromium
