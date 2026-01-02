@@ -14,9 +14,12 @@ sleep 3
 # 3. Launch Chromium with your specific settings
 chromium --noerrdialogs --disable-infobars --incognito --start-fullscreen \
     --app=https://physchem.cz/youtube_videos/ \
+    --ozone-platform=wayland \
     --ignore-gpu-blocklist \
     --enable-gpu-rasterization \
-    --enable-zero-copy &
+    --enable-zero-copy \
+    --enable-features=VaapiVideoDecoder &
+
 
 # Open the crontab editor:
 # crontab -e
