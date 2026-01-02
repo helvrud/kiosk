@@ -20,7 +20,8 @@ chromium --noerrdialogs --disable-infobars --incognito --start-fullscreen \
     --enable-zero-copy \
     --enable-features=VaapiVideoDecoder &
 
-
+# This is needed to let the window manager to hide the mouse pointer (just a one pixel move of the pointer there and back)
+wlrctl pointer move 1 1; wlrctl pointer move -1 -1
 # Open the crontab editor:
 # crontab -e
 # Scroll to the very bottom and add this line:
