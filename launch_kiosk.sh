@@ -9,7 +9,7 @@ export XDG_RUNTIME_DIR=/run/user/1000
 pkill -f chromium
 
 # 2. Wait a moment to ensure it's closed
-sleep 10
+sleep 3
 
 # 3. Launch Chromium with your specific settings
 chromium --noerrdialogs --disable-infobars --incognito --start-fullscreen \
