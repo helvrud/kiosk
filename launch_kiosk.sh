@@ -12,8 +12,9 @@ pkill -f chromium
 sleep 3
 
 # 3. Launch Chromium with your specific settings
+# --app=https://physchem.cz/youtube_videos/ \
 chromium --noerrdialogs --disable-infobars --incognito --start-fullscreen \
-    --app=https://physchem.cz/youtube_videos/ \
+    --app=https://physchem.cz/screen/ \
     --ozone-platform=wayland \
     --ignore-gpu-blocklist \
     --enable-gpu-rasterization \
